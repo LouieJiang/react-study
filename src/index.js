@@ -1,7 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-ReactDOM.render(<h1>Hello,React!</h1>, document.getElementById('root'))
+function tick(params) {
+  const element = (
+    <div>
+      <h1>hello,world!</h1>
+      <h2>It is {new Date().toLocaleTimeString()}</h2>
+    </div>
+  )
+  ReactDOM.render(element, document.getElementById('root'))
+}
+setInterval(tick, 1000)
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
