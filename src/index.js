@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import StateComponent from './StateComponent'
+// import StateComponent from './StateComponent'
+import ComponentLife from './ComponentLife'
 import SetStateDemo from './setStateDemo'
 // function tick(params) {
 //   const element = (
@@ -13,7 +14,10 @@ import SetStateDemo from './setStateDemo'
 //   ReactDOM.render(element, document.getElementById('root'))
 // }
 // setInterval(tick, 1000)
-ReactDOM.render(<SetStateDemo></SetStateDemo>, document.getElementById('root'))
+ReactDOM.render(
+  <ComponentLife></ComponentLife>,
+  document.getElementById('root')
+)
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
