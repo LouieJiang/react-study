@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import StateComponent from './StateComponent'
+// import StateComponent from './StateComponent'
+import ComponentLife from './ComponentLife'
 // function tick(params) {
 //   const element = (
 //     <div>
@@ -13,7 +14,7 @@ import StateComponent from './StateComponent'
 // }
 // setInterval(tick, 1000)
 ReactDOM.render(
-  <StateComponent></StateComponent>,
+  <ComponentLife></ComponentLife>,
   document.getElementById('root')
 )
 
