@@ -7,6 +7,7 @@ import SetStateDemo from './setStateDemo'
 import IfDemo from './ifDemo'
 import KeyDemo from './keyDemo'
 import HookDemo from './HookDemo'
+import FormDemo from './FormDemo'
 // function tick(params) {
 //   const element = (
 //     <div>
