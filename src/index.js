@@ -8,6 +8,7 @@ import IfDemo from './ifDemo'
 import KeyDemo from './keyDemo'
 import HookDemo from './HookDemo'
 import FormDemo from './FormDemo'
+import FetchDemo from './FetchDemo'
 // function tick(params) {
 //   const element = (
 //     <div>
@@ -18,7 +19,7 @@ import FormDemo from './FormDemo'
 //   ReactDOM.render(element, document.getElementById('root'))
 // }
 // setInterval(tick, 1000)
-ReactDOM.render(<HookDemo></HookDemo>, document.getElementById('root'))
+ReactDOM.render(<FetchDemo></FetchDemo>, document.getElementById('root'))
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
