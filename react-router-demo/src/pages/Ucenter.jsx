@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
-const Ucenter = () => {
+const Ucenter = (props) => {
   return (
     <div>
-      Ucenter
+      Ucenter:{props.match.params.id}-{props.match.params.name}
     </div>
   )
 }

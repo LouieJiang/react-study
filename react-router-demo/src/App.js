@@ -41,7 +41,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home}></Route>
           <Route exact path="/mine" component={Mine}></Route>
-          <Route path="/mine/ucenter" component={Ucenter}></Route>
+          <Route path="/mine/ucenter/:id?/:name?" component={Ucenter}></Route>
           {/* <Route path="/demo" render={() => <div>hello Demo</div>}></Route> */}
           <Route
             path="/demo"
