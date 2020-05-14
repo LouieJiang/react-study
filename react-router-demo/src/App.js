@@ -1,23 +1,41 @@
 import React from 'react'
+import './css/style.css'
 import Home from './pages/Home'
 import Mine from './pages/Mine'
 import Ucenter from './pages/Ucenter'
 import NotFound from './pages/NotFound'
 import Demo from './pages/Demo'
-import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import {
+  HashRouter as Router,
+  Switch,
+  Route,
+  Link,
+  NavLink,
+} from 'react-router-dom'
 function App() {
   return (
     <div className="App">
       <Router>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink
+              activeClassName="selected"
+              activeStyle={{ color: 'green' }}
+              exact
+              to="/"
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <Link to="/mine">Mine</Link>
+            <NavLink activeClassName="selected" exact to="/mine">
+              Mine
+            </NavLink>
           </li>
           <li>
-            <Link to="/mine/ucenter">Ucenter</Link>
+            <NavLink activeClassName="selected" exact to="/mine/ucenter">
+              Ucenter
+            </NavLink>
           </li>
         </ul>
         <Switch>
