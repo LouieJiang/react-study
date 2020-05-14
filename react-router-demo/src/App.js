@@ -2,6 +2,7 @@ import React from 'react'
 import Home from './pages/Home'
 import Mine from './pages/Mine'
 import Ucenter from './pages/Ucenter'
+import NotFound from './pages/NotFound'
 import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom'
 function App() {
   return (
@@ -18,9 +19,12 @@ function App() {
             <Link to="/mine/ucenter">Ucenter</Link>
           </li>
         </ul>
-        <Route exact path="/" component={Home}></Route>
-        <Route exact path="/mine" component={Mine}></Route>
-        <Route path="/mine/ucenter" component={Ucenter}></Route>
+        <Switch>
+          <Route exact path="/" component={Home}></Route>
+          <Route exact path="/mine" component={Mine}></Route>
+          <Route path="/mine/ucenter" component={Ucenter}></Route>
+          <Route component={NotFound}></Route>
+        </Switch>
       </Router>
     </div>
   )
