@@ -28,7 +28,16 @@ function App() {
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName="selected" exact to="/mine">
+            <NavLink
+              to={{
+                pathname: '/mine',
+                search: '?sort=name',
+                hash: '#the-hash',
+                state: { flag: '我是隐藏的' },
+              }}
+              activeClassName="selected"
+              exact
+            >
               Mine
             </NavLink>
           </li>
