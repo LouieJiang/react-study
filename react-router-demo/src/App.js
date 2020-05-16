@@ -5,12 +5,14 @@ import Mine from './pages/Mine'
 import Ucenter from './pages/Ucenter'
 import NotFound from './pages/NotFound'
 import Demo from './pages/Demo'
+import Shop from './pages/Shop'
 import {
   HashRouter as Router,
   Switch,
   Route,
   Link,
   NavLink,
+  Redirect,
 } from 'react-router-dom'
 function App() {
   return (
@@ -48,6 +50,7 @@ function App() {
           </li>
         </ul>
         <Switch>
+          <Redirect from="/helloMine" to="/mine" />
           <Route exact path="/" component={Home}></Route>
           <Route exact path="/mine" component={Mine}></Route>
           <Route path="/mine/ucenter/:id?/:name?" component={Ucenter}></Route>
@@ -56,6 +59,7 @@ function App() {
             path="/demo"
             render={(props) => <Demo {...props} name="hello"></Demo>}
           ></Route>
+          <Route path="/shop" component={Shop}></Route>
           <Route component={NotFound}></Route>
         </Switch>
       </Router>
