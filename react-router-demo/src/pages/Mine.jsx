@@ -12,6 +12,16 @@ const Mine = (props) => {
   // console.log(value.age)
   console.log(props)
 
-  return <div>Mine</div>
+  const clickHandle = () => {
+    console.log('事件')
+    //props.history.push('/')
+    props.history.replace('/')
+  }
+  return (
+    <div>
+      Mine
+      <button onClick={clickHandle}>回到Home页面</button>
+    </div>
+  )
 }
 export default Mine
