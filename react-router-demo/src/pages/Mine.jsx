@@ -1,5 +1,6 @@
 import React from 'react'
 import querystring from 'querystring'
+import MineDemo from './MineDemo'
 
 const Mine = (props) => {
   // const params = new URLSearchParams(props.location.search)
@@ -14,13 +15,14 @@ const Mine = (props) => {
 
   const clickHandle = () => {
     console.log('事件')
-    //props.history.push('/')
-    props.history.replace('/')
+    //props.history.push('/') //叠加
+    props.history.replace('/') //替换
   }
   return (
     <div>
       Mine
       <button onClick={clickHandle}>回到Home页面</button>
+      <MineDemo> </MineDemo>
     </div>
   )
 }
