@@ -6,6 +6,9 @@ import Ucenter from './pages/Ucenter'
 import NotFound from './pages/NotFound'
 import Demo from './pages/Demo'
 import Shop from './pages/Shop'
+import Book from './pages/Book'
+import JavaBook from './pages/JavaBook'
+import WebBook from './pages/WebBook'
 import {
   HashRouter as Router,
   Switch,
@@ -60,6 +63,13 @@ function App() {
             render={(props) => <Demo {...props} name="hello"></Demo>}
           ></Route>
           <Route path="/shop" component={Shop}></Route>
+          {/* <Route path="/book" component={Book}></Route> */}
+          <Book>
+            <Switch>
+              <Route path="/book/webbook" component={WebBook}></Route>
+              <Route path="/book/javabook" component={JavaBook}></Route>
+            </Switch>
+          </Book>
           <Route component={NotFound}></Route>
         </Switch>
       </Router>
